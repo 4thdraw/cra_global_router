@@ -2,13 +2,10 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import Location from '../utile/Location';
 
-
 export default function Content({data, leng}) {
 
   const { id } = useParams(); 
-
-  const renderComponent = () => {
-    
+  const renderComponent = () => {    
     switch (id) {
       case 'about':
         return <p>회사소개컴포넌트생성_분업</p>;
