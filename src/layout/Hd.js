@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Header = ({data}) => {
+const Header = ({data, setLeng}) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
       <div className="container">
@@ -26,6 +26,13 @@ const Header = ({data}) => {
           }
         
         </ul>
+
+        {/* 언어선택 - 오른쪽 정렬 */}
+        <div>
+           <button onClick={()=>{ setLeng('en'); }}>EN</button>
+           <button onClick={()=>{ setLeng('kr'); }}>KR</button>
+           <button onClick={()=>{ setLeng('cn'); }}>CN</button>
+        </div>
       </div>
     </nav>
   );

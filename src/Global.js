@@ -8,7 +8,7 @@ export default function Global() {
   const globaldata = sqldata[leng];
   return (
     <div>
-        <App data={globaldata} leng={leng}  />
+        <App data={globaldata} leng={leng} setLeng={setLeng}  />
     </div>
   )
 }

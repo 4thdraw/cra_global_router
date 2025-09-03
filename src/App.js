@@ -10,10 +10,10 @@ import Nopage from "./page/Nopage";
 // 그리드시스템
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App({leng, data}) { 
+function App({leng, data, setLeng}) { 
   return (
     <div className="App ">
-      <Layout data={data}>
+      <Layout data={data} setLeng={setLeng} >
            <Routes>
               <Route path="/" element={<Home />} />
               <Route path={`${leng === 'kr' ? '' : '/' + leng}/content/:id`} element={<Content leng={leng} data={data} />} />
