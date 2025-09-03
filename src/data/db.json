@@ -1,0 +1,152 @@
+{
+  "kr": {
+    "about": {
+      "path": "/content/about",
+      "label": "회사소개",
+      "page": {
+        "title": "회사소개",
+        "p": "회사소개설명을 넣는다"
+      }
+    },
+    "location": {
+      "path": "/content/location",
+      "label": "오시는길",
+      "page": {
+        "title": "오시는길",
+        "p": "오시는길"
+      }
+    },
+    "history": {
+      "path": "/content/history",
+      "label": "연혁",
+      "page": {
+        "title": "연혁",
+        "p": "연혁"
+      }
+    },
+    "notice": {
+      "path": "/board/notice",
+      "label": "공지사항",
+      "page": {
+        "title": "공지사항",
+        "p": "공지사항"
+      }
+    },
+    "inquiry": {
+      "path": "/board/inquiry",
+      "label": "견적문의",
+      "page": {
+        "title": "견적문의",
+        "p": "견적문의"
+      }
+    },
+    "showroom": {
+      "path": "/board/showroom",
+      "label": "쇼룸",
+      "page": {
+        "title": "쇼룸",
+        "p": "쇼룸"
+      }
+    }
+  },
+  "en": {
+    "about": {
+      "path": "/en/content/about",
+      "label": "About Us",
+      "page": {
+        "title": "About Us",
+        "p": "Insert description about the company"
+      }
+    },
+    "location": {
+      "path": "/en/content/location",
+      "label": "Location",
+      "page": {
+        "title": "Location",
+        "p": "How to get here"
+      }
+    },
+    "history": {
+      "path": "/en/content/history",
+      "label": "History",
+      "page": {
+        "title": "History",
+        "p": "Company history"
+      }
+    },
+    "notice": {
+      "path": "/en/board/notice",
+      "label": "Notice",
+      "page": {
+        "title": "Notice",
+        "p": "Notices and announcements"
+      }
+    },
+    "inquiry": {
+      "path": "/en/board/inquiry",
+      "label": "Inquiry",
+      "page": {
+        "title": "Inquiry",
+        "p": "Quotation inquiry"
+      }
+    },
+    "showroom": {
+      "path": "/en/board/showroom",
+      "label": "Showroom",
+      "page": {
+        "title": "Showroom",
+        "p": "Our showroom"
+      }
+    }
+  },
+  "cn": {
+    "about": {
+      "path": "/cn/content/about",
+      "label": "公司介绍",
+      "page": {
+        "title": "公司介绍",
+        "p": "填写公司介绍说明"
+      }
+    },
+    "location": {
+      "path": "/cn/content/location",
+      "label": "来访路线",
+      "page": {
+        "title": "来访路线",
+        "p": "来访路线说明"
+      }
+    },
+    "history": {
+      "path": "/cn/content/history",
+      "label": "历史",
+      "page": {
+        "title": "历史",
+        "p": "公司发展历程"
+      }
+    },
+    "notice": {
+      "path": "/cn/board/notice",
+      "label": "通知事项",
+      "page": {
+        "title": "通知事项",
+        "p": "公告与通知"
+      }
+    },
+    "inquiry": {
+      "path": "/cn/board/inquiry",
+      "label": "报价咨询",
+      "page": {
+        "title": "报价咨询",
+        "p": "报价咨询内容"
+      }
+    },
+    "showroom": {
+      "path": "/cn/board/showroom",
+      "label": "展示厅",
+      "page": {
+        "title": "展示厅",
+        "p": "我们的展示厅"
+      }
+    }
+  }
+}

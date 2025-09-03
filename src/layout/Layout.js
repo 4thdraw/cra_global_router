@@ -4,10 +4,10 @@ import Ft from './Ft';
 import Title from './Title';
 import Quick from './Quick';
 
-export default function Layout({children}) {
+export default function Layout({children, data}) {
   return (    
     <div className='wrapper'>
-        <Hd />
+        <Hd data={data} />
         <Title />
         <div className='d-flex flex-wrap align-items-start container'>
             <div className='content flex-grow-1'>
