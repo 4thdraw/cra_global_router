@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import BannerSwiper from '../utile/BannerSwiper';
 
 export default function Home() {
   const { global } = useParams();
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <section>
       <p>Language: {getLanguageLabel()}</p>
+      <BannerSwiper />
     </section>    
   )
 }
