@@ -29,9 +29,9 @@ const Header = ({data, setLeng}) => {
 
         {/* 언어선택 - 오른쪽 정렬 */}
         <div>
-           <button onClick={()=>{ setLeng('en'); }}>EN</button>
-           <button onClick={()=>{ setLeng('kr'); }}>KR</button>
-           <button onClick={()=>{ setLeng('cn'); }}>CN</button>
+          <Link to="/en" onClick={() => setLeng('en')}>EN</Link>
+          <Link to="/" onClick={() => setLeng('kr')}>KR</Link>
+          <Link to="/cn" onClick={() => setLeng('cn')}>CN</Link>
         </div>
       </div>
     </nav>

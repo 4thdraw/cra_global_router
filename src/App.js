@@ -16,6 +16,7 @@ function App({leng, data, setLeng}) {
       <Layout data={data} setLeng={setLeng} >
            <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/:global" element={<Home />} />
               <Route path={`${leng === 'kr' ? '' : '/' + leng}/content/:id`} element={<Content leng={leng} data={data} />} />
               <Route path={`${leng === 'kr' ? '' : '/' + leng}/board/:id`} element={<Board  leng={leng} data={data} />} />
               <Route path="*" element={<Nopage />} />
