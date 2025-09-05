@@ -1,4 +1,5 @@
 import React from 'react'
+import { Textstylebtn, PageButton } from '../ui/ui'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -33,7 +34,18 @@ export default function BannerSwiper() {
             })
         }
     </Swiper>
-
+    <div className='d-flex justify-content-center mt-5 gap-3'>
+        <Textstylebtn isWhite='true' >회원가입하기</Textstylebtn> <Textstylebtn>이벤트보러가기</Textstylebtn>
+    </div>
+    
+    <div className='d-flex justify-content-center mt-3 gap-2'>
+       {
+            ["특가이벤트","구독이벤트","할인이벤트","자동롤링해줘","3초마다","2개씩보이게해줘"].map((v, i)=>{
+                return <PageButton bg='#ff0000' textcolor='white'>{i + 1}</PageButton>
+            })
+        }
+    </div>
+     
     </div>
     
   )

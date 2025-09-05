@@ -3,7 +3,9 @@ import { useParams } from 'react-router-dom'
 import BannerSwiper from '../utile/BannerSwiper';
 
 export default function Home() {
+  
   const { global } = useParams();
+
   const getLanguageLabel = () => {
     switch (global) {
       case 'cn':

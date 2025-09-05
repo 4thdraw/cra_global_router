@@ -1,9 +1,15 @@
 // Header.js
-import React from 'react';
+import React , { useState }from 'react';
 import { Link } from 'react-router-dom';
+
+import { HamburgerIcon , CloseIcon} from '../ui/ui';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = ({data, setLeng}) => {
+
+  const [isOpen, setIsOpen] = useState(false);
+ 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
       <div className="container">
@@ -11,6 +17,11 @@ const Header = ({data, setLeng}) => {
         <Link className="navbar-brand me-auto" to="/">
           <img src="/logo.png" alt="로고" style={{ height: '40px' }} />
         </Link>
+        <button onClick={ ()=> setIsOpen(!isOpen) } >
+          {
+            isOpen ? <CloseIcon></CloseIcon> : <HamburgerIcon></HamburgerIcon>          
+          }          
+        </button>       
 
         {/* 메뉴 - 가운데 정렬 */}
         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
