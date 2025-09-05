@@ -1,14 +1,22 @@
 // Header.js
-import React , { useState }from 'react';
+import React , { useState , useEffect }from 'react';
 import { Link } from 'react-router-dom';
 
 import { HamburgerIcon , CloseIcon} from '../ui/ui';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../mystyle.scss'
 
 const Header = ({data, setLeng}) => {
 
-  const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    const toggleMenu = document.getElementById('togglemenu');
+    toggleMenu.addEventListener('click', () => {
+      toggleMenu.classList.toggle('active');
+    })
+
+  }, [])
+
  
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
@@ -17,14 +25,13 @@ const Header = ({data, setLeng}) => {
         <Link className="navbar-brand me-auto" to="/">
           <img src="/logo.png" alt="로고" style={{ height: '40px' }} />
         </Link>
-        <button onClick={ ()=> setIsOpen(!isOpen) } >
-          {
-            isOpen ? <CloseIcon></CloseIcon> : <HamburgerIcon></HamburgerIcon>          
-          }          
+        <button id="togglemenu" className='d-lg-none' >
+          <CloseIcon></CloseIcon> 
+          <HamburgerIcon></HamburgerIcon>
         </button>       
 
         {/* 메뉴 - 가운데 정렬 */}
-        <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+        <ul className="navbar-nav mx-auto mb-2 mb-lg-0 d-none d-lg-flex">
           {
             Object.entries(data).map((v, i)=>{
               return(

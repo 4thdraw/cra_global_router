@@ -1,0 +1,20 @@
+#togglemenu{
+    svg{
+        &:first-child{
+            display:none;
+        }
+    }
+    &.active{
+        svg{
+            &:first-child{
+                display:block;
+            }
+            &:last-child{
+                display:none;
+            }
+        }
+        + ul{
+            display: block !important
+        }
+    }
+}
